@@ -10,7 +10,7 @@ import { Client } from "langsmith";
 process.env.LANGCHAIN_TRACING_V2 = "true";
 process.env.LANGCHAIN_PROJECT = `Perplexica`;
 process.env.LANGCHAIN_ENDPOINT = "https://api.smith.langchain.com";
-process.env.LANGCHAIN_API_KEY = "YOUR_API_KEY";
+process.env.LANGCHAIN_API_KEY = "Your API Key";
 
 
 
