@@ -15,6 +15,10 @@ services:
       dockerfile: backend.dockerfile
       args:
         - SEARXNG_API_URL=http://searxng:8080
+        - LANGCHAIN_TRACING_V2=true
+        - LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
+        - LANGCHAIN_API_KEY=ls__d63e7caa3acc4ebb9658ca9a6e221897
+        - LANGCHAIN_PROJECT=perplexica
     depends_on:
       - searxng
     ports:

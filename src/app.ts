@@ -6,6 +6,14 @@ import routes from './routes';
 import { getPort } from './config';
 import logger from './utils/logger';
 
+process.env.LANGCHAIN_TRACING_V2 = "true";
+process.env.LANGCHAIN_PROJECT = `Perplexica`;
+process.env.LANGCHAIN_ENDPOINT = "https://api.smith.langchain.com";
+process.env.LANGCHAIN_API_KEY = "ls__d63e7caa3acc4ebb9658ca9a6e221897";
+
+import { Client } from "langsmith";
+
+const client = new Client();
 const port = getPort();
 
 const app = express();

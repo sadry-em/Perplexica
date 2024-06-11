@@ -7,7 +7,7 @@ import { Select } from '../SettingsDialog';
 
 type Theme = 'dark' | 'light' | 'system';
 
-const ThemeSwitcher = ({ className }: { className?: string }) => {
+const ThemeSwitcher = ({size , className }: { size?: number, className?: string }) => {
   const [mounted, setMounted] = useState(false);
 
   const { theme, setTheme } = useTheme();
